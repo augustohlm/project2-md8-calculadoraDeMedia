@@ -88,7 +88,7 @@ function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal();
 
     //Estamos inserindo os resultados originados da mediaFinal e da divisão dos resultado e inserindo no HTML atráves do ID.
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2) //limitando as casas decimais em 2;
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 
 }
